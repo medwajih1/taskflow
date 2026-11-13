@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f7fb;
+  color: #212529;
+}
+
+/* Navbar */
+
+.navbar {
+  min-height: 70px;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
+}
+
+/* Authentication */
+
+.auth-container {
+  min-height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 480px;
+  border: none;
+  border-radius: 18px;
+}
+
+/* Dashboard */
+
+.dashboard-card {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+  height: 100%;
+  transition: 0.2s ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-3px);
+}
+
+.dashboard-card h2 {
+  font-size: 2rem;
+  margin: 12px 0;
+}
+
+.dashboard-card a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Projects */
+
+.project-card {
+  border: none;
+  border-radius: 16px;
+  transition: 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Forms */
+
+.form-control,
+.form-select {
+  border-radius: 9px;
+  padding: 10px 12px;
+}
+
+.form-control:focus,
+.form-select:focus {
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
+}
+
+/* Buttons */
+
+.btn {
+  border-radius: 9px;
+  font-weight: 500;
+}
+
+/* Cards */
+
+.card {
+  border-radius: 16px;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .auth-container {
+    padding: 25px 15px;
+  }
+
+  .container {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .dashboard-card {
+    padding: 22px;
+  }
+}
